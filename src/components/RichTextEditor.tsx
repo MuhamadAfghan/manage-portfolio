@@ -34,6 +34,7 @@ export default function RichTextEditor({
   placeholder = 'Start writing...',
 }: RichTextEditorProps) {
   const editor = useEditor({
+    immediatelyRender: false,
     extensions: [
       StarterKit,
       Image.configure({
